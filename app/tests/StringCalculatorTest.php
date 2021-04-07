@@ -4,7 +4,7 @@ use App\StringCalculator;
 use function PHPUnit\Framework\assertSame;
 
 it('does not allow an empty input', function () {
-    assertSame(0, (new StringCalculator())->add(''));
+    (new StringCalculator())->add('');
 })->throws(Exception::class);
 
 it('finds the sum of a single number', function (){
