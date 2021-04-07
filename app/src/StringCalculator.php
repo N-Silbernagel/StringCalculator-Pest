@@ -24,9 +24,7 @@ class StringCalculator
             throw new Exception("No input provided");
         }
 
-        $numbers = $this->parseInput($input);
-
-        return array_reduce($numbers, "self::addNumbers", 0);
+        return array_reduce($this->parseInput($input), "self::addNumbers", 0);
     }
 
     /**
