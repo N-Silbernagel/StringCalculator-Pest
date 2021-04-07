@@ -1,0 +1,10 @@
+{
+  "name": "nsilbernagel/pest-playgound",
+  "description": "playgound for pestphp",
+  "autoload": {
+    "psr-4": {"App\\": "src/"}
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.0"
+  }
+}
